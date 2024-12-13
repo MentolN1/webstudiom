@@ -1,0 +1,48 @@
+.affairs {
+    background-color: $affairs-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: none;
+
+      @media screen and (min-width: 1200px) {
+       display: flex; 
+    }
+
+    &__list {
+            display: flex;
+            gap: 30px;
+        }
+    
+        &__item {
+            position: relative;
+        }
+    
+        &__title {
+            color: $text-color;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.16;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    
+        &__img {
+            width: 370px;
+        }
+    
+        &__box {
+            width: 370px;
+            height: 70px;
+            @include flex-box($c: flex-start, $d: flex-start);
+            background: rgba(47, 48, 58, 0.80);
+            position: absolute;
+            bottom: 0;
+    
+        }
+    
+        &__text {
+            color: $studio-color;
+           @extend %accent;
+        }
+}
+
